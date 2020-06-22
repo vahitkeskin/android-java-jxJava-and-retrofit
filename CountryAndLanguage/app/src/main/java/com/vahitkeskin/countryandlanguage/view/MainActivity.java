@@ -76,7 +76,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<List<CountryModel>> call, Throwable t) {
-                Toast.makeText(MainActivity.this, "Hata : "+t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "İnternetinizi kontrol ediniz!", Toast.LENGTH_LONG).show();
+                t.printStackTrace();
             }
         });
 
